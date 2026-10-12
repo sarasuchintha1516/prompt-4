@@ -1,0 +1,20 @@
+
+prompts = [
+    ("Explain everything in one word with examples.",
+     "Conflicting instructions",
+     "Explain the topic in 5 simple points with one example."),
+
+    ("Tell me facts about an unknown topic.",
+     "Hallucination risk",
+     "Give verified facts only. If unsure, say you do not know."),
+
+    ("Write a program.",
+     "Ambiguous prompt",
+     "Write a Python program to add two numbers and explain it.")
+]
+
+for broken, failure, improved in prompts:
+    print("Broken Prompt:", broken)
+    print("Failure:", failure)
+    print("Improved Prompt:", improved)
+    print("-" * 30)
